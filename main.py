@@ -1,3 +1,31 @@
+def multaLocalidade(velocidade: int):
+    if velocidade > 50:
+        print("Multa a atribuir: 60€")
+    elif velocidade >= 90:
+        print("Multa a atribuir: 120€")
+    elif velocidade >= 120:
+        print("Multa a atribuir: 320€")                
+    else:
+        print("Não ocorreu qualquer infração.")
+        
+def multaFora(velocidade: int):
+    if velocidade > 90:
+        print("Multa a atribuir: 60€")
+    elif velocidade >= 120:
+        print("Multa a atribuir: 120€")                
+    else:
+        print("Não ocorreu qualquer infração.")
+        
+def multaAutoestrada(velocidade: int):
+    if velocidade > 120:
+        print("Multa a atribuir: 60€")
+    elif velocidade > 150:
+        print("Multa a atribuir: 120€")
+    elif velocidade >= 175:
+        print("Multa a atribuir: 360€")                
+    else:
+        print("Não ocorreu qualquer infração.")  
+
 while True:
     print("Cálculo de Multas\n")
     print("Onde circulava o veículo?") 
@@ -18,6 +46,6 @@ while True:
     elif local == "3":
         multaAutoestrada(velocidade)
     elif local == "4":
-        continue                               
+        continue                             
     else:
         print("Local inválido.")
